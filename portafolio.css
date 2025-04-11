@@ -1,0 +1,169 @@
+/* aca empieza la nav */
+
+nav {
+    background-color:white; 
+    padding: 10px 40px;
+}
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 90px;
+    height: 50px;
+}
+.info {
+    display: flex;
+    gap: 30px;
+    font-weight: bold;
+    justify-content: center;
+    flex: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.redes {
+    display: flex;
+    gap: 15px;
+    width: 30px;
+    margin-right: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+/* hasta aca va la nav */
+
+/* primer cuadro negro */
+.aboutMe {
+    width: 100%;
+    height: 500px;
+    background-color:black;
+    color: white;
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+.name {
+    font-size: 140px; 
+    margin: 130px 0 0 0px;
+}
+.career {
+    font-size: 18px;
+    margin-left: 10px;
+}
+/* description .aboutMe2 */
+
+.about-me {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    margin-bottom: 80px;
+    padding: 80px 0 0 0;
+    gap: 250px;
+    flex-wrap: wrap;
+}
+.aboutText {
+    max-width: 500px;
+}
+.about-me2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.photoLina {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+.cartas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; 
+    padding: 32px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    padding-left: 80px;
+}
+.card-img {
+    width: 300px;
+    height: 180px;
+}
+.Projects{
+    font-size: 32px;
+    padding-top: 80px;
+    margin-bottom: 5px;
+    margin-left: 200px;
+    font-weight: bold;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+    padding-top: 10px;
+}
+.btn{ 
+    background-color: black;
+}
+.projects-body {
+    background-color: #ECECEC;
+    padding-bottom: 20px;
+}
+
+.botones {
+    gap: 10px;
+    background-color: #808080;
+    border-color: #808080;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+.botones:hover {
+    background-color: #a9a9a9; 
+    cursor: pointer;
+}
+footer {
+    width: 100%;
+    height: 220px;
+    background-color: black;
+}
+.social-footer {
+    gap: 15px;
+    width: 30px;
+}
+.correo {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.footer-2 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.logo-footer {
+    width: 50px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-final {
+    color: #ECECEC;
+    font-size: 13px;
+}
+.card-text {
+    font-size: 12px;
+}
+.backend{
+    background-color:#6D6875;
+}
