@@ -55,11 +55,12 @@ nav {
 .about-me {
     display: flex;
     align-items: center;
-    margin-left: 200px;
-    margin-bottom: 80px;
-    padding: 80px 0 0 0;
-    gap: 250px;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 60px;
+    padding: 80px 20px 0;
+    margin: 0 auto 80px;
+    max-width: 1200px;
 }
 .aboutText {
     max-width: 500px;
@@ -167,10 +168,7 @@ footer {
 .backend{
     background-color:#6D6875;
 }
-
 /* menu hambuerguesa */
-
-/* Navbar base */
 .contenedor {
     display: flex;
     align-items: center;
@@ -189,6 +187,9 @@ footer {
     cursor: pointer;
 }
 @media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
     .info {
         display: none;
         flex-direction: column;
@@ -204,8 +205,87 @@ footer {
     }
     .hamburguesa {
         display: block;
+        margin-left: 0
     }
-    .logo {
-        display: none;
+}
+
+/* responsive NOMBRE */
+
+@media (max-width: 992px) {
+    .name {
+        font-size: 80px;
+        text-align: center;
+        margin: 100px 0 0 0;
+    }
+    .career {
+        font-size: 16px;
+        text-align: center;
+        margin: 20px auto 0;
+        width: 90%;
+    }
+}
+@media (max-width: 600px) {
+    .name {
+        font-size: 50px;
+        margin: 80px 0 0 0;
+    }
+    .career {
+        font-size: 14px;
+    }
+    .aboutMe {
+        height: 400px;
+        padding: 40px 0;
+    }
+}
+/* Responsive about-me */
+@media (max-width: 992px) {
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding: 60px 20px 0;
+        margin-left: 0;
+    }
+    .aboutText {
+        max-width: 90%;
+    }
+    .about-me2 {
+        font-size: 28px;
+    }
+    .description {
+        font-size: 16px;
+    }
+    .photoLina {
+        width: 200px;
+    }
+}
+@media (max-width: 600px) {
+    .about-me2 {
+        font-size: 24px;
+    }
+    .description {
+        font-size: 14px;
+    }
+    .photoLina {
+        width: 160px;
+    }
+}
+
+@media (max-width:1075px ) { 
+    .Projects{
+        font-size: 32px;
+        padding-top: 80px;
+        margin-bottom: 5px;
+        margin-left: 100px;
+        font-weight: bold;
+    }
+}
+@media (max-width:737px ) { 
+    .Projects{
+        font-size: 32px;
+        padding-top: 80px;
+        margin-bottom: 5px;
+        margin-left: 80px;
+        font-weight: bold;
     }
 }
