@@ -167,3 +167,48 @@ footer {
 .backend{
     background-color:#6D6875;
 }
+
+/* menu hambuerguesa */
+
+/* Navbar base */
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .info {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .hamburguesa {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive a 768px */
+  @media (max-width: 768px) {
+    .info {
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      position: absolute;
+      top: 60px; /* Ajusta según altura del header */
+      left: 0;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .info.activo {
+      display: flex;
+    }
+  
+    .hamburguesa {
+      display: block;
+    }
+  }
+  
