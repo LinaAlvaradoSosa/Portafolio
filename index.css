@@ -175,40 +175,37 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  .info {
+}
+.info {
     display: flex;
     gap: 20px;
-  }
-  
-  .hamburguesa {
+}
+
+.hamburguesa {
     display: none;
     font-size: 28px;
     background: none;
     border: none;
     cursor: pointer;
-  }
-  
-  /* Responsive a 768px */
-  @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
     .info {
-      display: none;
-      flex-direction: column;
-      background-color: #fff;
-      position: absolute;
-      top: 60px; /* Ajusta según altura del header */
-      left: 0;
-      width: 100%;
-      padding: 10px;
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        padding: 10px;
     }
-  
     .info.activo {
-      display: flex;
+        display: flex;
     }
-  
     .hamburguesa {
-      display: block;
+        display: block;
     }
-  }
-  
+    .logo {
+        display: none;
+    }
+}
