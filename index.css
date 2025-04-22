@@ -1,5 +1,4 @@
 /* aca empieza la nav */
-
 nav {
     background-color:white; 
     padding: 10px 40px;
@@ -35,24 +34,37 @@ nav {
 /* primer cuadro negro */
 .aboutMe {
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-color:black;
     color: white;
 }
-.box{
-    display: flex;
-    justify-content: center;
+.Alva {
+    font-size: 140px; 
+    margin: 150px 0 0 5px;
 }
 .name {
     font-size: 140px; 
-    margin: 130px 0 0 0px;
+    margin: 150px 0 0 5px;
+    line-height: 1.5;
+}
+.name-dev{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dev {
+    font-size: 140px; 
+    margin: 150px 5px 0 0;
 }
 .career {
     font-size: 18px;
-    margin-left: 10px;
+    margin-left: 9px;
 }
+/* hasta aca va el primer cuadro negro */
 /* description .aboutMe2 */
-
+.responsive {
+    display: none;
+}
 .about-me {
     display: flex;
     align-items: center;
@@ -81,25 +93,89 @@ nav {
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
-.cartas {
+/* cartas */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    padding: 90px 20px 90px 20px;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    }
+}
+.card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
-    gap: 50px; 
-    padding: 32px;
-    margin: 0 auto;
-    border-radius: 20px;
-    margin-bottom: 40px;
-    padding-left: 80px;
+    flex-direction: column;
+    transition: transform 0.3s;
 }
-.card-img {
-    width: 300px;
-    height: 180px;
+.card:hover {
+    transform: scale(1.02);
 }
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.card-content {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.card h3 {
+    font-size: 22px;
+    color: #333;
+}
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+.card-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+.card-buttons button {
+    flex: 1;
+    padding: 9.6px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}x
+.btn1{
+    background-color:#808080;
+    color: white;
+}
+.btn1:hover {
+    background-color: #727272;
+}
+.btn-secondary {
+    background-color: #e0e0e0;
+    color: #333;
+}
+.btn-secondary:hover {
+    background-color: #ccc;
+}
+/* fin- cartas */
 .Projects{
     font-size: 32px;
     padding-top: 80px;
     margin-bottom: 5px;
-    margin-left: 200px;
+    margin-left: 30px;
     font-weight: bold;
 }
 .contact {
@@ -212,84 +288,94 @@ footer {
         margin-left: 0
     }
 }
+@media (max-width: 1290px) {
+    .name, .Alva, .dev {
+        display: none;
+    }
+    .responsive {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .d-flex {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .name2 {
+        font-size: 140px;
+        margin-top: 40px;
+        margin: 40px 0 0 5px;
+    }
+    .dev2 {
+        font-size: 140px;
+        color: gray;
+        margin-left: auto;
+        margin: 40px 5px 0 0 ;
+    }
+    .Alva2 {
+        font-size: 140px;
+        margin-left: 5px;
+    }
+}
+@media (max-width: 710px) {
+    .name2 {
+        font-size: 120px;
+        margin-top: 60px;
+        margin-left: 5px;
 
-/* responsive NOMBRE */
-
-@media (max-width: 992px) {
-    .name {
-        font-size: 80px;
-        text-align: center;
-        margin: 100px 0 0 0;
+    }
+    .dev2 {
+        font-size: 120px;
+        margin-top: 60px;
+        margin-right: 5px;
+    }
+    .Alva2{
+        font-size: 120px;
+        margin-left: 5px;
+    }
+}
+@media (max-width: 591px) {
+    .name2 {
+        font-size: 100px;
+        margin-top: 70px;
+        margin-left: 5px;
+    }
+    .dev2 {
+        font-size: 100px;
+        margin-top: 70px;
+        margin-right: 5px;
+    }
+    .Alva2{
+        font-size: 100px;
+        margin-left: 5px;
     }
     .career {
         font-size: 16px;
-        text-align: center;
-        margin: 20px auto 0;
-        width: 90%;
     }
 }
-@media (max-width: 600px) {
-    .name {
-        font-size: 50px;
-        margin: 80px 0 0 0;
+@media (max-width: 415px) {
+    .name2{
+        font-size: 75px;
+        margin-top: 100px;
+        margin-left: 5px;
     }
-    .career {
-        font-size: 14px;
+    
+    .dev2 {
+        font-size: 75px;
+        margin-top: 100px;
+        margin-right: 5px;
+    }
+    .Alva2{
+        font-size: 75px;
+        margin-left: 5px;
     }
     .aboutMe {
-        height: 400px;
-        padding: 40px 0;
+        width: 100%;
+        height: 500px;
     }
-}
-/* Responsive about-me */
-@media (max-width: 992px) {
-    .about-me {
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
-        padding: 60px 20px 0;
-        margin-left: 0;
-    }
-    .aboutText {
-        max-width: 90%;
-    }
-    .about-me2 {
-        font-size: 28px;
-    }
-    .description {
-        font-size: 16px;
-    }
-    .photoLina {
-        width: 200px;
-    }
-}
-@media (max-width: 600px) {
-    .about-me2 {
-        font-size: 24px;
-    }
-    .description {
-        font-size: 14px;
-    }
-    .photoLina {
-        width: 160px;
+    .career {
+        font-size: 15px;
     }
 }
 
-@media (max-width:1075px ) { 
-    .Projects{
-        font-size: 32px;
-        padding-top: 80px;
-        margin-bottom: 5px;
-        margin-left: 100px;
-        font-weight: bold;
-    }
-}
-@media (max-width:737px ) { 
-    .Projects{
-        font-size: 32px;
-        padding-top: 80px;
-        margin-bottom: 5px;
-        margin-left: 80px;
-        font-weight: bold;
-    }
-}
