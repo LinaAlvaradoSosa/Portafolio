@@ -1,8 +1,14 @@
 /* aca empieza la nav */
 nav {
-    background-color:white; 
+    background-color:#FAFAFA; 
     padding: 10px 40px;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 10px 40px;
+}  
 .contenedor {
     display: flex;
     justify-content: space-between;
@@ -15,11 +21,21 @@ nav {
 .info {
     display: flex;
     gap: 30px;
+}
+.linksNav {
     font-weight: bold;
     justify-content: center;
+    color: black;
+    text-decoration: none;
     flex: 1;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     cursor: pointer;
+}
+.navLink{
+    transition: transform 0.3s;
+}
+.navLink:hover {
+    transform: scale(1.05);
 }
 .redes {
     display: flex;
@@ -28,6 +44,9 @@ nav {
     margin-right: 100px;
     height: 30px;
     cursor: pointer;
+}
+html {
+    scroll-behavior: smooth;
 }
 /* hasta aca va la nav */
 
@@ -155,7 +174,7 @@ nav {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
-}x
+}
 .btn1{
     background-color:#808080;
     color: white;
