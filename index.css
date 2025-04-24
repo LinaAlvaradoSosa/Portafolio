@@ -53,7 +53,7 @@ html {
 /* primer cuadro negro */
 .aboutMe {
     width: 100%;
-    height: 600px;
+    height: 510px;
     background-color:black;
     color: white;
 }
@@ -64,7 +64,6 @@ html {
 .name {
     font-size: 140px; 
     margin: 150px 0 0 5px;
-    line-height: 1.5;
 }
 .name-dev{
     display: flex;
@@ -77,11 +76,14 @@ html {
 }
 .career {
     font-size: 18px;
-    margin-left: 9px;
+    margin: 30px 0 0 9px;
 }
 /* hasta aca va el primer cuadro negro */
 /* description .aboutMe2 */
 .responsive {
+    display: none;
+}
+.responsive2 {
     display: none;
 }
 .about-me {
@@ -322,79 +324,86 @@ footer {
         width: 100%;
     }
     .name2 {
-        font-size: 140px;
+        font-size: 130px;
         margin-top: 40px;
-        margin: 40px 0 0 5px;
+        margin: 150px 0 0 10px;
     }
     .dev2 {
-        font-size: 140px;
+        font-size: 130px;
         color: gray;
         margin-left: auto;
-        margin: 40px 5px 0 0 ;
+        margin: 150px 0px 0 0 ;
     }
     .Alva2 {
         font-size: 140px;
-        margin-left: 5px;
-    }
-}
-@media (max-width: 710px) {
-    .name2 {
-        font-size: 120px;
-        margin-top: 60px;
-        margin-left: 5px;
-
-    }
-    .dev2 {
-        font-size: 120px;
-        margin-top: 60px;
-        margin-right: 5px;
-    }
-    .Alva2{
-        font-size: 120px;
-        margin-left: 5px;
-    }
-}
-@media (max-width: 591px) {
-    .name2 {
-        font-size: 100px;
-        margin-top: 70px;
-        margin-left: 5px;
-    }
-    .dev2 {
-        font-size: 100px;
-        margin-top: 70px;
-        margin-right: 5px;
-    }
-    .Alva2{
-        font-size: 100px;
-        margin-left: 5px;
-    }
-    .career {
-        font-size: 16px;
-    }
-}
-@media (max-width: 415px) {
-    .name2{
-        font-size: 75px;
-        margin-top: 90px;
-        margin-left: 5px;
-    }
-    
-    .dev2 {
-        font-size: 75px;
-        margin-top: 90px;
-        margin-right: 5px;
-    }
-    .Alva2{
-        font-size: 75px;
-        margin-left: 5px;
-    }
-    .aboutMe {
-        width: 100%;
-        height: 450px;
-    }
-    .career {
-        font-size: 15px;
+        margin: -60px 0 16px 10px;
     }
 }
 
+@media (max-width: 1210px) {
+    .responsive {
+        display: none;
+    }
+    .responsive2{
+        display: flex;
+        flex-direction: column;
+    }
+    .name3 {
+        font-size: 120px;
+        margin: 130px 0 0 10px;
+    }
+    .dev3 {
+        font-size: 120px;
+        color: gray;
+        margin-left: auto;
+        margin: 130px 0px 0 0 ;
+    }
+    .Alva3 {
+        font-size: 120px;
+        margin: -50px 0 16px 10px;
+    }   
+    .contenedorNegro3 {
+        display: flex;
+        justify-content: space-between;
+        width: 1000px;
+    }
+    .career{
+        margin-top: -30px;
+    }
+}
+@media (max-width: 1000px) {
+    .contenedorNegro3 {
+        display: flex;
+        justify-content: space-between;
+        width: 900px;
+    }
+}
+@media (max-width: 900px) {
+    .contenedorNegro3 {
+        display: flex;
+        justify-content: space-between;
+        width: 800px;
+    }
+}
+@media (max-width: 800px) {
+    .contenedorNegro3 {
+        display: flex;
+        justify-content: space-between;
+        width: 700px;
+    }
+}
+@media (max-width: 700px) {
+    .contenedorNegro3 {
+        display: flex;
+        justify-content: space-between;
+        width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedorNegro3 {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+    }
+}
