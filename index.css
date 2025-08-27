@@ -63,7 +63,8 @@ html {
 }
 .name {
     font-size: 140px; 
-    margin: 150px 0 0 20px;
+    margin-top: 150px;
+    margin-left: 4%;
 }
 .name-dev{
     display: flex;
@@ -72,11 +73,13 @@ html {
 }
 .dev {
     font-size: 140px; 
-    margin: 150px 20px 0 0;
+    margin-top: 150px;
+    margin-right: 4%;
 }
 .career {
     font-size: 18px;
-    margin: 30px 0 0 20px;
+    margin: 30px;
+    margin-left: 4%;
 }
 /* hasta aca va el primer cuadro negro */
 /* description .aboutMe2 */
@@ -103,7 +106,7 @@ html {
     line-height: 1.6;
 }
 .photoLina {
-    width: 280px;
+    width: 350px;
     gap: 30px;
     height: auto;
     border-radius: 12px;
@@ -264,6 +267,14 @@ footer {
 }
 .backend{
     background-color:#6D6875;
+}
+
+/* Responsive en pantallas pequeñas */
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
 }
 /* menu hambuerguesa */
 .contenedor {
