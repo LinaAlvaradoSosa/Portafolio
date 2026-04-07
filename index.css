@@ -587,3 +587,6 @@ footer {
         margin: 30px 0 0 8px;
     }
 }
+.justify-text {
+    text-align: justify;
+  }
